@@ -90,7 +90,8 @@ build:
 	# We need to build with docker, as long as docker-compose cannot push to dockerhub
 	#docker build -t regis/openedx:latest -t regis/openedx:ginkgo openedx/
 	docker build -t regis/openedx:hawthorn openedx/
-	docker build -t regis/openedx-forum:latest -t regis/openedx-forum:ginkgo forum/
+	#docker build -t regis/openedx-forum:latest -t regis/openedx-forum:ginkgo forum/
+	docker build -t regis/openedx-forum:hawthorn forum/
 
 push:
 	docker push regis/openedx:hawthorn
